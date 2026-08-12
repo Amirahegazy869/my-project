@@ -29,49 +29,69 @@ namespace first_project_csharp
             // Console.WriteLine("what is your name ?");
             // var userName = Console.ReadLine();
             //Console.WriteLine("Hello, " + userName + "!");
+           // ==================================================================
 
+           // Console.Write("===peersonal info collector ===");
+           // Console.Write("enter your name:");
+           // var collectedName = Console.ReadLine();
+           // Console.Write("enter your age:");
+         //   var collectedAge = Console.ReadLine();
+           // Console.Write("enter your favorite color:");
+           // var collectedColor = Console.ReadLine();
+           // Console.Write("are you a student? (yes/no)");
+           // var isStudent = Console.ReadLine();
+           // Console.WriteLine();
+           // Console.WriteLine("=== collected information ===");
+           // Console.WriteLine("Name: " + collectedName);
+           // Console.WriteLine("Age: " + collectedAge);
+           // Console.WriteLine("Favorite Color: " + collectedColor);
+           // Console.WriteLine("Is Student: " + isStudent);
 
-            Console.Write("===peersonal info collector ===");
-            Console.Write("enter your name:");
-            var collectedName = Console.ReadLine();
-            Console.Write("enter your age:");
-            var collectedAge = Console.ReadLine();
-            Console.Write("enter your favorite color:");
-            var collectedColor = Console.ReadLine();
-            Console.Write("are you a student? (yes/no)");
-            var isStudent = Console.ReadLine();
-            Console.WriteLine();
-            Console.WriteLine("=== collected information ===");
-            Console.WriteLine("Name: " + collectedName);
-            Console.WriteLine("Age: " + collectedAge);
-            Console.WriteLine("Favorite Color: " + collectedColor);
-            Console.WriteLine("Is Student: " + isStudent);
+          // =====================================================================
 
-            Console.WriteLine("Receipt Printer......");
+           // Console.WriteLine("Receipt Printer......");
+           // Console.WriteLine("=== Receipt ===");
+           // const decimal ReceiptVatRate = 0.14m;
+           // var item1 = 19.99m;
+           // var item2 = 45.50m;
+           // var item3 = 12.00m;
 
-            Console.WriteLine("=== Receipt ===");
-            const decimal ReceiptVatRate = 0.14m;
-            var item1 = 19.99m;
-            var item2 = 45.50m;
-            var item3 = 12.00m;
+           // var subtotal = item1 + item2 + item3;
+           // var vatAmount = subtotal * ReceiptVatRate;
 
-            var subtotal = item1 + item2 + item3;
-            var vatAmount = subtotal * ReceiptVatRate;
+           // var total = subtotal + vatAmount;
 
-            var total = subtotal + vatAmount;
+           // Console.WriteLine($"Item 1 : {item1:C}");
+           // Console.WriteLine($"Item 2 : {item2:C}");
+           // Console.WriteLine($"Item 3 : {item3:C}");
+           // Console.WriteLine($"Subtotal : {subtotal:C}");
+           // Console.WriteLine($"VAT (14%) : {vatAmount:C}");
+           // Console.WriteLine($"Total : {total:C}");
+           // Console.WriteLine("\nPress any key to exit...");
+           // Console.ReadKey();
 
-            Console.WriteLine($"Item 1 : {item1:C}");
-            Console.WriteLine($"Item 2 : {item2:C}");
-            Console.WriteLine($"Item 3 : {item3:C}");
-            Console.WriteLine($"Subtotal : {subtotal:C}");
-            Console.WriteLine($"VAT (14%) : {vatAmount:C}");
-            Console.WriteLine($"Total : {total:C}");
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
-            //=============================================
-            // operators 
+            //==================================================
+                             // operators 
               
+            int x = 10;
+            int y = 3;
+            int sum = x + y; // addition
+            Console.WriteLine(sum); 
+            int difference = x - y; // subtraction
+            Console.WriteLine(difference);
+            int remainder = x % y; // modulus
+            Console.WriteLine(remainder);
+            int differenceRemainder = remainder % y;
+            Console.WriteLine(differenceRemainder);
+            int total = sum + difference + remainder + differenceRemainder;
+            Console.WriteLine(total);
+            int product = x * y; // multiplication
+            Console.WriteLine(product);
+            float z = (float)x / (float)y; // division
+            Console.WriteLine(z);
+            int zint =x / y; // integer division
 
+            Console.WriteLine(zint);
 
 
 
