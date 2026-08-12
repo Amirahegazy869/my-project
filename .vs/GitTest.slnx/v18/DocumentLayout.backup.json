@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\DotNetjourney\\GitTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DBED8AB-CA27-484E-9A8E-B8CE62C11D34}|GitTest\\GitTest.csproj|c:\\users\\admin\\source\\repos\\dotnetjourney\\gittest\\gittest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DBED8AB-CA27-484E-9A8E-B8CE62C11D34}|GitTest\\GitTest.csproj|solutionrelative:gittest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98855A7E-D5CC-9BD6-CD1E-6C874E3A35A7}|GitTest\\GitTest.csproj|c:\\users\\admin\\source\\repos\\dotnetjourney\\gittest\\gittest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98855A7E-D5CC-9BD6-CD1E-6C874E3A35A7}|GitTest\\GitTest.csproj|solutionrelative:gittest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +22,8 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DotNetjourney\\GitTest\\GitTest\\Program.cs",
               "RelativeDocumentMoniker": "GitTest\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\DotNetjourney\\GitTest\\GitTest\\Program.cs",
-              "RelativeToolTip": "GitTest\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\DotNetjourney\\GitTest\\GitTest\\Program.cs*",
+              "RelativeToolTip": "GitTest\\Program.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-12T17:12:15.509Z",
@@ -31,11 +31,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
