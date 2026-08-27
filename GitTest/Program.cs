@@ -133,268 +133,72 @@ namespace first_project_csharp
         //Console.WriteLine(modernlist[2]);
 
 
-        static List<wallet> allwallet = new List<wallet>
+        static List<wallet> allwallets = new List<wallet>
             {
                 new wallet("amira", 1000)
 
             };
-
-        static wallet? findwallet(string ownerId)
-        {
-            foreach (var wallet in allwallet)
-            {
-                if (wallet.Ownerid == ownerId)
-                {
-                    return wallet;
-                }
-            }
-            return null;
-        }
-            public class wallet
+        public class wallet
         {
             public string ownerid;
             public decimal balance;
-            public wallet (string ownerId, decimal balance)
+            public wallet(string ownerId, decimal balance)
+            {
+                NewMethod1(ownerId);
+                balance = balance;
+            }
+
+            private void NewMethod1(string ownerId)
             {
                 ownerid = ownerId;
-               balance = balance;
             }
-          
+
+            static wallet? findwallet(string ownerId)
+            {
+                foreach (var wallet in allwallets)
+                {
+                    if (wallet.ownerid == ownerId)
+                    {
+                        return wallet;
+                    }
+                }
+                return null;
 
 
 
-
-
-
-             
-
-
-
-
-
-
+            }
 
                 
 
         }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
         }
 
-        private static void NewMethod()
-        {
-            int x = 30;
-            bool y = (x == 20);
-            Console.WriteLine(y);
-            bool z = (x >= 30);
-            Console.WriteLine(z);
-            if (x < 0 || x > 120)
-            {
-                Console.WriteLine("invaild age");
-            }
-            else if (x < 30)
-            {
-                Console.WriteLine("child");
-            }
-            else if (x < 18)
-            {
-                Console.WriteLine("teen");
+      //  private static void NewMethod()
+        //{
+          //  int x = 30;
+            //bool y = (x == 20);
+            //Console.WriteLine(y);
+            //bool z = (x >= 30);
+            //Console.WriteLine(z);
+            //if (x < 0 || x > 120)
+            //{
+              //  Console.WriteLine("invaild age");
+           // }
+           // else if (x < 30)
+            //{
+              //  Console.WriteLine("child");
+            //}
+            //else if (x < 18)
+            //{
+              //  Console.WriteLine("teen");
 
-            }
-            else
-            {
-                Console.WriteLine("aduit");
-            }
-        }
-    }
+            //}
+            //else
+            //{
+              //  Console.WriteLine("aduit");
+            //}
+        //}
+   // }
 }
 
