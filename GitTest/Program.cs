@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
+using System.Net.WebSockets;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
@@ -193,25 +194,65 @@ namespace first_project_csharp
             //  Console.WriteLine("aduit");
             //}
             //}
+            //BankAcount test = new BankAcount("test user") { OwnerName = "test user" };
+            //BankAcount ahmed = new BankAcount() { OwnerName = "ahmed mohamed" };
+            //BankAcount amira = new BankAcount()
 
-            BankAcount sara = new BankAcount();
-            sara.AccountNumber = 1001;
-            sara.OwnerName = "sara ibrahim";
-            sara.Balance = 1000.00m;
-
-
-            BankAcount muhamed = new BankAcount();
-            muhamed.AccountNumber = 1002;
-            muhamed.OwnerName = "muhamed saeed";
-            muhamed.Balance = 1500.00m;
+            //{
+            //    OwnerName = "amira hegazy",
+            //    Balance = 1000.00m
 
 
+            //};
+            //Console.WriteLine($"  {amira.OwnerName}| {amira.Balance:f2} EGP");
+            BankAcount sara = new BankAcount()
+            {
+                OwnerName = "sara ibrahim",
+                Balance = 1000.00m
+            };
+            // sara.AccountNumber = 1001;
+            // sara.OwnerName = "sara ibrahim";
+            // sara.Balance = 1000.00m;
+
+            BankAcount muhamed = new BankAcount()
+            {
+                OwnerName = "muhamed saeed",
+                Balance = 1500.00m
+            };
+            // muhamed.AccountNumber = 1002;
+            // muhamed.OwnerName = "muhamed saeed";
+            // muhamed.Balance = 1500.00m;
+            //muhamed.Balance += 500.00m;
+            // Console.WriteLine($"{muhamed.Balance:f2} EGP");
             //BankAcount sameacount = sara;
             //sameacount.Balance = 2000.00m;
+            BankAcount layla = new BankAcount()
+            {
 
-          Console.WriteLine($" {sara.AccountNumber} | {sara.OwnerName}| {sara.Balance:f2} EGP");
-          Console.WriteLine($" {muhamed.AccountNumber} | {muhamed.OwnerName}| {muhamed.Balance:f2} EGP");
+                OwnerName = "layla mohamed",
+                Balance = 2000.00m
+            };
 
+            // Console.WriteLine($" {sara.AccountNumber} | {sara.OwnerName}| {sara.Balance:f2} EGP");
+            //Console.WriteLine($" {muhamed.AccountNumber} | {muhamed.OwnerName}| {muhamed.Balance:f2} EGP");
+            sara.Deposit(250.00m);
+            sara.Deposit(100.00m, "salary top-up");
+            var withdrawResult = sara.withdraw(300.00m);
+            Console.WriteLine($" withdraw returned: {withdrawResult}");
+            var withdrawRefused = muhamed.withdraw(2000.00m);
+            Console.WriteLine($" withdraw returned: {withdrawRefused}");
+            sara.applymonthlyfee();
+            muhamed.applymonthlyfee(15);
+            sara.Transfer(muhamed, 500.00m);
+            Console.WriteLine(sara.GetSummary());
+            Console.WriteLine(muhamed.GetSummary());
+            setownername(layla);
+            Console.WriteLine(layla.GetSummary());
+            Console.WriteLine(BankAcount.getbankinfo());
+        }
+
+        private static void setownername(BankAcount layla)
+        {
 
         }
     }
